@@ -5,8 +5,8 @@ import ProfilePage from "./ProfilePage";
 import HaircutPage from "./HaircutPage";
 import PostsPage from "./PostsPage";
 import {Route} from "react-router";
-import NavigationBar from "./NavigationBar";
-import LoginPage from "./LoginPage";
+import Navigation from "./Navigation";
+import Login from "./Login";
 import Cookies from "universal-cookie";
 import FollowedPage from "./FollowedPage";
 import FollowedProfilePage from "./FollowedProfilePage";
@@ -18,7 +18,7 @@ import CutHairPage from "./CutHairPage";
 class App extends React.Component {
 
     state = {
-        isLoggedIn: false,
+        isLoggedIn: true,
         token : ""
     }
 
@@ -39,7 +39,7 @@ class App extends React.Component {
                     {
                         this.state.isLoggedIn ?
                             <div style={{display: "flex", alignItems: "start", marginTop: "50px"}}>
-                                <NavigationBar/>
+                                <Navigation/>
                                 <Route path={"/"} component={ProfilePage} exact={true}/>
                                 <Route path={"/profile"} component={ProfilePage} exact={true}/>
                                 <Route path={"/posts"} component={PostsPage} exact={true}/>
@@ -53,7 +53,7 @@ class App extends React.Component {
                             </div>
                             :
                             <div>
-                                <Route path={"/"} component={LoginPage}/>
+                                <Route path={"/"} component={Login}/>
                             </div>
                     }
                 </BrowserRouter>

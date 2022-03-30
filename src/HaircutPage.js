@@ -1,18 +1,15 @@
 import './App.css';
 import * as React from "react";
 import sheep from "./../src/image/sheep.png"
+import { DayPicker } from 'react-day-picker';
+import 'react-day-picker/dist/style.css';
 
 class HaircutPage extends React.Component {
     render() {
         return (
-            <div>
-                <a href="./HairdressingSalon">
-                <img
-                    src={sheep} alt="sheep"
-                    width={200}
-                    height={200}
-                />
-                </a>
+            <div className="font-face-gm3">
+              <h3>When you want to get your haircut?</h3>
+            <DayPicker/>
             </div>
         )
     }

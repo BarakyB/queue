@@ -1,9 +1,11 @@
 import './App.css';
 import * as React from "react";
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import Cookies from "universal-cookie";
+import {green} from "@mui/material/colors";
+import {blue} from "@material-ui/core/colors";
 
-class NavigationBar extends React.Component {
+class Navigation extends React.Component {
     ws = new WebSocket("ws://localhost:8989/stream?t=1&o=7791");
 
     state = {
@@ -48,13 +50,13 @@ class NavigationBar extends React.Component {
                             )
                         })
                     }
+    <button onClick={this.logout}>
+        Logout
+    </button>
 
-                    <button onClick={this.logout}>
-                        Logout
-                    </button>
                 </ul>
             </div>
         )
     }
 }
-export default NavigationBar;
+export default Navigation;
