@@ -9,13 +9,10 @@ class Navigation extends React.Component {
     ws = new WebSocket("ws://localhost:8989/stream?t=1&o=7791");
 
     state = {
-        links: [{title: "Profile", path: "/profile"},{title: "Haircut", path: "/Haircut"},
+        links: [{title: "Profile", path: "/profile"},
+            {title: "Haircut", path: "/Haircut"},
             {title: "Pedicure Manicure", path: "/PedicureManicure"},
-            {title: "Hair Removal", path: "/HairRemoval"},
-            {title: "Posts", path: "/posts"}
-            , {title: "About", path: "/about"},
-            {title: "Followed", path: "/followed"}
-
+            {title: "Hair Removal", path: "/HairRemoval"}
         ]
     }
 

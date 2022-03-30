@@ -9,7 +9,7 @@ class HaircutPage extends React.Component {
         return (
             <div className="font-face-gm3">
               <h3>When you want to get your haircut?</h3>
-            <DayPicker/>
+                <DayPicker/>
             </div>
         )
     }

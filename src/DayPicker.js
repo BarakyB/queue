@@ -1,22 +1,29 @@
-import React from 'react';
-import { format } from 'date-fns';
+import * as React from "react";
 import { DayPicker } from 'react-day-picker';
+import { format } from 'date-fns';
 
+export default function App() {
+    const [selectedDay, setSelectedDay] = React.useState<Date>();
+    const footer = selectedDay
+        ? `You selected ${format(selectedDay, 'PPP')}.`
+        : `Please pick a day.`;
 
-export default function Example() {
-    const [selected, setSelected] = React.useState < Date > (null);
+    const hiddenDays = [
+        new Date(2022, 3, 10),
+        new Date(2022, 3, 12),
+        new Date(2022, 3, 20),
+        { from: new Date(2022, 4, 18), to: new Date(2022, 4, 29) }
+    ];
 
-    let footer = <p>Please pick a day.</p>;
-    if (selected) {
-        footer = <p>You picked {format(selected, 'PP')}.</p>;
-    }
     return (
         <DayPicker
             mode="single"
-            selected={selected}
-            onSelect={setSelected}
+            selected={selectedDay}
+            onSelect={setSelectedDay}
             footer={footer}
+            DefaultMonth={hiddenDays[0]}
+            hidden={hiddenDays}
+
         />
     );
 }
-
