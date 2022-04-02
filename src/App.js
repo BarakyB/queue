@@ -14,6 +14,7 @@ import PediManiPage from "./PediManiPage";
 import HairRemovalPage from "./HairRemovalPage";
 import HairdressingSalon from "./HairdressingSalon";
 import CutHairPage from "./CutHairPage";
+import Service from "./Service";
 
 class App extends React.Component {
 
@@ -49,6 +50,7 @@ class App extends React.Component {
                                 <Route path={"/PedicureManicure"} component={PediManiPage} exact={true}/>
                                 <Route path={"/CutHairPage"} component={CutHairPage} exact={true}/>
                                 <Route path={"/HairRemoval"} component={HairRemovalPage} exact={true}/>
+                                <Route path={"/Service"} component={Service} exact={true}/>
                                 <Route path={"/user/:userId"} component={FollowedProfilePage}/>
                             </div>
                             :
