@@ -6,7 +6,7 @@ import HaircutPage from "./HaircutPage";
 import PostsPage from "./PostsPage";
 import {Route} from "react-router";
 import Navigation from "./Navigation";
-import Login from "./Login";
+import LoginPage from "./LoginPage";
 import Cookies from "universal-cookie";
 import FollowedPage from "./FollowedPage";
 import FollowedProfilePage from "./FollowedProfilePage";
@@ -15,11 +15,10 @@ import HairRemovalPage from "./HairRemovalPage";
 import HairdressingSalon from "./HairdressingSalon";
 import CutHairPage from "./CutHairPage";
 import Service from "./Service";
-
 class App extends React.Component {
 
     state = {
-        isLoggedIn: true,
+        isLoggedIn: false,
         token : ""
     }
 
@@ -55,7 +54,7 @@ class App extends React.Component {
                             </div>
                             :
                             <div>
-                                <Route path={"/"} component={Login}/>
+                                <Route path={"/"} component={LoginPage}/>
                             </div>
                     }
                 </BrowserRouter>

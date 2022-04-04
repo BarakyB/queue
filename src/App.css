@@ -1,3 +1,6 @@
+body{
+  font-family: "Times New Roman";
+}
 .App {
   text-align: center;
 }
@@ -35,6 +38,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: red;
 }
 @font-face {
   font-family: "SourceSans3-Regular";
