@@ -15,10 +15,15 @@ import HairRemovalPage from "./HairRemovalPage";
 import HairdressingSalon from "./HairdressingSalon";
 import CutHairPage from "./CutHairPage";
 import Service from "./Service";
+import Details from "./Details";
+import { DayPicker } from 'react-day-picker';
+import DayPickerComponent from "./DayPickerComponent";
+import 'react-day-picker/dist/style.css';
+
 class App extends React.Component {
 
     state = {
-        isLoggedIn: false,
+        isLoggedIn: true,
         token : ""
     }
 
@@ -31,6 +36,7 @@ class App extends React.Component {
             })
         }
     }
+
 
     render() {
         return (
@@ -51,6 +57,7 @@ class App extends React.Component {
                                 <Route path={"/HairRemoval"} component={HairRemovalPage} exact={true}/>
                                 <Route path={"/Service"} component={Service} exact={true}/>
                                 <Route path={"/user/:userId"} component={FollowedProfilePage}/>
+                                <Route path={"/details"} component={Details}/>
                             </div>
                             :
                             <div>

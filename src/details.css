@@ -1,0 +1,28 @@
+input{
+    width: 200px;
+    height: 25px;
+    border-radius: 12px;
+    border: 1px solid black;
+    outline: none;
+    background-color: white;
+    box-shadow: inset 0px 0px 25px 0px white;
+
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    border-radius: 60px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 25px;
+    border: none;
+}
+
+body {
+    background-color: white;
+    color: black;
+    padding: 50px;
+    font-family: Sans-Serif;
+    text-align: center;
+}

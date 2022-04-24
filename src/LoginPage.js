@@ -78,7 +78,7 @@ class LoginPage extends React.Component {
                   <img src={profile} alt="profile" className="profile"/>
                 </div>
               </div>
-              <div>
+              <div className="font-face-gm">
                 <h1>Login Page</h1>
                 <div>
                   <img src={email} alt="email" className="email"/>
