@@ -23,7 +23,7 @@ import 'react-day-picker/dist/style.css';
 class App extends React.Component {
 
     state = {
-        isLoggedIn: true,
+        isLoggedIn: false,
         token : ""
     }
 
