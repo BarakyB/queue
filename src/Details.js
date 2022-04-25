@@ -4,7 +4,7 @@ import './details.css';
 
 class Details extends React.Component {
 
-state = {
+    state = {
         name: "",
         number: "",
         rememberMe: false,
@@ -12,7 +12,7 @@ state = {
         showErr:""
     };
 
-handleChange = event => {
+    handleChange = event => {
         this.setState({ name: event.target.value });
     };
 
@@ -27,17 +27,17 @@ handleChange = event => {
         return (
             <div className="font-face-gm3">
                 Name:
-                    <input value={this.state.name} onChange={this.handleChange} />
+                <input value={this.state.name} onChange={this.handleChange} />
                 <br/><br/>
                 Phone Number:
                 <input value={this.state.number} onChange={this.handleChange} /><br/>
                 <br/>
                 <br/>
                 <div>
-                   Gender: <select value={this.state.title} onChange={this.handleSelect}>
-                        <option>Male.</option>
-                        <option>Female.</option>
-                    </select>
+                    Gender: <select value={this.state.title} onChange={this.handleSelect}>
+                    <option>Male.</option>
+                    <option>Female.</option>
+                </select>
                 </div>
                 <br/><br/>
                 <button onClick={this.handleSubmit}>Submit</button>
