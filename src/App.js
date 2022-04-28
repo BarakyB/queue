@@ -16,9 +16,6 @@ import HairdressingSalon from "./HairdressingSalon";
 import CutHairPage from "./CutHairPage";
 import Service from "./Service";
 import Details from "./Details";
-import { DayPicker } from 'react-day-picker';
-import DayPickerComponent from "./DayPickerComponent";
-import 'react-day-picker/dist/style.css';
 
 class App extends React.Component {
 
@@ -50,11 +47,11 @@ class App extends React.Component {
                                 <Route path={"/profile"} component={ProfilePage} exact={true}/>
                                 <Route path={"/posts"} component={PostsPage} exact={true}/>
                                 <Route path={"/followed"} component={FollowedPage} exact={true}/>
-                                <Route path={"/Haircut"} component={HaircutPage} exact={true}/>
+                                <Route path={"/Haircut"} render={props => <HaircutPage  {...props} />} exact={true}/>
                                 <Route path={"/HairdressingSalon"} component={HairdressingSalon} exact={true}/>
-                                <Route path={"/PedicureManicure"} component={PediManiPage} exact={true}/>
+                                <Route path={"/PedicureManicure"} render={props => <PediManiPage  {...props} />} exact={true}/>
                                 <Route path={"/CutHairPage"} component={CutHairPage} exact={true}/>
-                                <Route path={"/HairRemoval"} component={HairRemovalPage} exact={true}/>
+                                <Route path={"/HairRemoval"} render={props => <HairRemovalPage  {...props} />} exact={true}/>
                                 <Route path={"/Service"} component={Service} exact={true}/>
                                 <Route path={"/user/:userId"} component={FollowedProfilePage}/>
                                 <Route path={"/details"} component={Details}/>
