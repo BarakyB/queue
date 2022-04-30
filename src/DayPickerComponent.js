@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-
-
 import { format } from 'date-fns';
 import { DayPicker } from 'react-day-picker';
 
@@ -17,8 +15,8 @@ export default function DayPickerComponent(props) {
     }
 
     return (
+
         <>
-        
         <DayPicker
             mode="single"
             required
@@ -28,7 +26,6 @@ export default function DayPickerComponent(props) {
              /> 
 
         </>
-        
 
     );
 }

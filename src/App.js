@@ -16,6 +16,8 @@ import HairdressingSalon from "./HairdressingSalon";
 import CutHairPage from "./CutHairPage";
 import Service from "./Service";
 import Details from "./Details";
+import Stepper from "./Stepper";
+
 
 class App extends React.Component {
 
@@ -55,6 +57,7 @@ class App extends React.Component {
                                 <Route path={"/Service"} component={Service} exact={true}/>
                                 <Route path={"/user/:userId"} component={FollowedProfilePage}/>
                                 <Route path={"/details"} component={Details}/>
+                                <Route path={"/stepper"} component={Stepper}/>
                             </div>
                             :
                             <div>
