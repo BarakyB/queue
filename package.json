@@ -16,6 +16,7 @@
     "carbon-components": "^10.56.0",
     "carbon-components-react": "^7.56.0",
     "carbon-icons": "^7.0.7",
+    "cronofy": "^3.6.0",
     "date-fns": "^2.28.0",
     "react": "^17.0.2",
     "react-day-picker": "^8.0.4",
@@ -55,7 +56,7 @@
   },
   "devDependencies": {
     "@mui/lab": "^5.0.0-alpha.74",
-    "@mui/material": "^5.6.1",
+    "@mui/material": "^5.6.3",
     "react-hook-form": "^7.30.0"
   }
 }
