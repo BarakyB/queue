@@ -1,7 +1,7 @@
 import './App.css';
 import * as React from "react";
 import 'react-day-picker/dist/style.css';
-import DayPickerComponent from './DayPickerComponent';
+import DayPickerComponent from './Component/DayPickerComponent';
 
 function PediManiPage () {
 

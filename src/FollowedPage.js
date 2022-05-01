@@ -2,7 +2,7 @@ import './App.css';
 import * as React from "react";
 import Cookies from "universal-cookie/es6";
 import axios from "axios";
-import UserComponent from "./UserComponent";
+import UserComponent from "./Component/UserComponent";
 
 class FollowedPage extends React.Component {
     state = {

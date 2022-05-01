@@ -15,7 +15,7 @@ import HairRemovalPage from "./HairRemovalPage";
 import HairdressingSalon from "./HairdressingSalon";
 import CutHairPage from "./CutHairPage";
 import Service from "./Service";
-import Details from "./Details";
+import Details from "./Component/Details";
 import Stepper from "./Stepper";
 
 
